@@ -9,6 +9,8 @@ section {
 
 section.card {
   padding: $card-padding;
+  border-radius: 13px;
+  box-shadow: 5px 5px 3px 2px rgba(0, 0, 0, 0.08);
 }
 
 main {
@@ -18,22 +20,80 @@ main {
   row-gap: $card-margin;
 }
 
-.card1{
-  grid-area: card1;
-}
-.card2{
-  grid-area: card2;
-}
-.card3{
-  grid-area: card3;
-}
-.card4{
-  grid-area: card4;
-}
-.card5{
-  grid-area: card5;
+@mixin card-light {
+  .name, .caption {
+    color: $lightGrayishBlue;
+  }
+  .verified {
+    color: $lightGrayishBlue50;
+  }
+  .quotation {
+    color: $lightGrayishBlue50;
+  }
 }
 
+@mixin card-dark {
+  .name, .caption {
+    color: $veryDarkBlackishBlue;
+  }
+  .verified {
+    color: $veryDarkBlackishBlue50;
+  }
+  .quotation {
+    color: $veryDarkBlackishBlue70;
+  }
+}
+
+.card-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-name-wrapper {
+  margin-left: 1rem;
+}
+
+.card img {
+  display: block;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: $font-size-caption;
+  font-weight: 700;
+}
+
+.card1 {
+  grid-area: card1;
+  background-color: $moderateViolet;
+  @include card-light;
+}
+
+.card2 {
+  grid-area: card2;
+  background-color: $veryDarkGrayishBlue;
+  @include card-light;
+}
+.card3 {
+  grid-area: card3;
+  background-color: $white;
+  @include card-dark;
+}
+.card4 {
+  grid-area: card4;
+  background-color: $veryDarkBlackishBlue;
+  @include card-light;
+}
+.card5 {
+  grid-area: card5;
+  background-color: $white;
+  @include card-dark;
+}
 
 div.attribution {
   padding-top: 3rem;

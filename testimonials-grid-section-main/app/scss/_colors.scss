@@ -5,8 +5,12 @@ $ltGray: #cecece;
 
 $moderateViolet: hsl(263, 55%, 52%);
 $veryDarkGrayishBlue: hsl(217, 19%, 35%);
-$veryDarkBlackishBlue: hsl(219, 29%, 14%);
+$veryDarkBlackishBlue: hsl(219, 29%, 14%); //.name
+$veryDarkBlackishBlue50: rgba($veryDarkBlackishBlue, 0.5);
+$veryDarkBlackishBlue70: rgba($veryDarkBlackishBlue, 0.7);
 $white: hsl(0, 0%, 100%);
 
 $lightGray: hsl(0, 0%, 81%);
-$lightGrayishBlue: hsl(210, 46%, 95%);
+$lightGrayishBlue: hsl(210, 46%, 95%); //.name
+$lightGrayishBlue50: rgba($lightGrayishBlue, .5);
+$lightGrayishBlue70: rgba($lightGrayishBlue, .7);
