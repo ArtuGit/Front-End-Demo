@@ -72,6 +72,11 @@ h2 {
   grid-area: card1;
   background-color: $moderateViolet;
   @include card-light;
+
+  background-image: url("../source/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-size: 8rem 8rem;
+  background-position: 75% top;
 }
 
 .card2 {
