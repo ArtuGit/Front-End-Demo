@@ -10,8 +10,78 @@ body {
   background-color: $white;
   color: $veryDarkBlackishBlue;
   font-family: 'Barlow Semi Condensed', sans-serif;
+
+  min-height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-main {
+section {
+  border: 1px solid $lightGrayishBlue;
+}
 
+@media #{$mq-1000-up} {
+  main {
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    section.panel-1 {
+      //margin-right: $card-margin/2;
+      flex: 3;
+      border: 1px solid royalblue;
+      section.row-1 {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        section#card1 {
+          flex:2;
+        }
+        section#card2 {
+          flex:1;
+        }
+      }
+      section.row-2 {
+        //margin-top: $card-margin;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        section#card3 {
+          flex:1;
+        }
+        section#card4 {
+          flex:2;
+        }
+      }
+    }
+    section.panel-2 {
+      //margin-left: $card-margin/2;
+      flex: 1;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: stretch;
+      align-items: stretch;
+      border: 1px solid royalblue;
+      section.card#card5{
+        height: 100%;
+      }
+    }
+  }
+  section.card {
+    padding: 1rem;
+  }
+}
+
+@media #{$mq-1000-down} {
+  main{
+    display: none;
+  }
 }
