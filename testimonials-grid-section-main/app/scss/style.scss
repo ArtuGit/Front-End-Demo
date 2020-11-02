@@ -3,11 +3,82 @@
 @import "global";
 @import "typography";
 
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-
-  a { color: hsl(228, 45%, 44%); }
+section {
+  border: 1px solid $lightGrayishBlue;
 }
 
+section.card {
+  padding: $card-padding;
+}
+
+main {
+  display: grid;
+  grid-template-rows: auto;
+  column-gap: $card-margin;
+  row-gap: $card-margin;
+}
+
+.card1{
+  grid-area: card1;
+}
+.card2{
+  grid-area: card2;
+}
+.card3{
+  grid-area: card3;
+}
+.card4{
+  grid-area: card4;
+}
+.card5{
+  grid-area: card5;
+}
+
+
+div.attribution {
+  padding-top: 3rem;
+  padding-bottom:3rem;
+  font-size: 0.6875rem; //11px
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media #{$mq-middle-up} {
+  main {
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "card1 card1 card2 card5"
+    "card3 card4 card4 card5";
+  }
+}
+
+@media #{$mq-middle-down} {
+  main {
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "card1 card1 card2"
+    "card3 card4 card4"
+    "card5 card5 card5";
+  }
+}
+
+@media #{$mq-small-down} {
+  main {
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5";
+  }
+}
