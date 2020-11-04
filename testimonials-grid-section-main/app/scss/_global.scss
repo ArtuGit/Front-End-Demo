@@ -7,11 +7,12 @@ html {
 }
 
 body {
-  background-color: $white;
+  background-color: $lightGrayishBlue;
   color: $veryDarkBlackishBlue;
   font-family: 'Barlow Semi Condensed', sans-serif;
 
   min-height: 100vh;
+
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
