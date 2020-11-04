@@ -1,13 +1,15 @@
 // Media Queries
-$mq-small-down: "only screen and (max-width: 620px)";
-$mq-small-up: "only screen and (min-width: 620px)";
+$mq-small-down: "only screen and (max-width: 649px)";
+$mq-small-up: "only screen and (min-width: 650px)";
 
-$mq-middle-down: "only screen and (max-width: 999px)";
-$mq-middle-up: "only screen and (min-width: 1000px)";
+$mq-middle-down: "only screen and (max-width: 1199px)";
+$mq-middle-up: "only screen and (min-width: 1200px)";
 
 // Others
-$font-size-body: 0.9rem;
-$font-size-caption: 1.3rem;
+$font-size-body: 1rem;
+$font-size-caption: 1.5rem;
+$font-size-attribution: 0.7rem;
+
 
 $card-margin: 2rem;
 $card-padding: 1.5rem;
