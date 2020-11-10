@@ -21,3 +21,8 @@ Used Technologies:
 Used Technologies:
 - HTML5
 - CSS3: FlexBox
+
+### [CSS Grid Demo](https://artugit.github.io/Front-End-Demo/css-grid)
+Used Technologies:
+- HTML5
+- CSS3: CSS Grid
