@@ -10916,11 +10916,10 @@ html, body {
 }
 
 .main-menu-link {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.75rem;
-  height: 100%;
+  padding-top: 0.25rem;
   display: block;
 }
 

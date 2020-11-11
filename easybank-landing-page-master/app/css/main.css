@@ -7,7 +7,7 @@ html, body {
 }
 
 .main-menu-link {
-  @apply text-2xl px-4 pt-3 h-full block;
+  @apply text-xl px-4 pt-1 block;
 }
 
 .main-menu-link.active {

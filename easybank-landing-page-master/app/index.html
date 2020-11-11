@@ -14,16 +14,17 @@
 <body class="font-public-sans h-full leading-normal flex flex-col">
 
 <header
-  class="bg-cst-neutral-white mx-0 mt-0 mb-10 p-0 w-full flex flex-row flex-nowrap sm:flex-wrap justify-around items-center"
+  class="border bg-cst-neutral-white mx-0 mt-0 mb-10 p-0 w-full flex flex-row flex-nowrap sm:flex-wrap justify-around items-center"
   id="header">
-  <div class="mobile-header flex flex-row flex-nowrap justify-around items-center sm:flex-grow sm:w-full">
-    <div id="logo"><a class="" href="#"><img src="../source/images/logo.svg" alt="EasyBank logo"></a></div>
+  <div class="border mobile-header flex flex-row flex-nowrap justify-around items-center sm:flex-grow sm:w-full">
+    <div id="logo"
+    ><a href="#"><img class="block px-4 py-2" src="../source/images/logo.svg" alt="EasyBank logo"></a></div>
     <div class="hidden sm:block flex-shrink-0 flex-grow-0 py-1" id="hamburger" role="button" tabindex="0">
       <img alt="" src="../source/images/icon-hamburger.svg">
     </div>
   </div>
 
-  <nav class="bg-cst-dark-lighter self-stretch sm:flex-grow-0 sm:w-full sm:hidden" id="nav">
+  <nav class="border bg-cst-dark-lighter self-stretch sm:flex-grow-0 sm:w-full sm:hidden" id="nav">
     <ul
       class="main-menu h-full text-cst-light-darker flex flex-row sm:flex-col flex-nowrap justify-around items-stretch sm:text-center">
       <li><a class="main-menu-link active" href="#">Home</a></li>
@@ -34,7 +35,7 @@
     </ul>
   </nav>
 
-  <div class="search-container hidden lg:inline-block">
+  <div class="border search-container hidden lg:inline-block">
     <form>
       <input class="px-2 bg-cst-light" name="search" placeholder="Search..." type="text">
       <button type="submit" onclick="dummyHandler();" ><i class="fa fa-search text-cst-light text-xl"></i></button>
