@@ -16,20 +16,22 @@ module.exports = {
       'lg': {'min': '1024px'},
       'xl': {'min': '1280px'},
     },
+    colors: {
+      'cst-primary': {
+        darkblue: 'hsl(233, 26%, 24%)', //big text?
+        limegreen: 'hsl(136, 65%, 51%)',
+        brightcyan: 'hsl(192, 70%, 51%)',
+      },
+      'cst-neutral': {
+        grayishblue: 'hsl(233, 8%, 62%)', //small text?
+        lightgrayishblue: 'hsl(220, 16%, 96%)',//body background?
+        verylightgray: 'hsl(0, 0%, 98%)', //body background?
+        white: 'hsl(0, 0%, 100%)', //header background?
+      },
+    },
     extend: {
       fontFamily: {
-        'nunito': ['nunito', 'sans-serif']
-      },
-      colors: {
-        'cst-dark': {
-          lighter: '#3d5a80',
-          default: '#293241',
-        },
-        'cst-light': {
-          darker: '#98c1d9',
-          default: '#e0fbfc',
-        },
-        'cst-orange': '#ee6c4d',
+        'public-sans': ['Public Sans', 'sans-serif']
       },
     },
   },

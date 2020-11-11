@@ -15,11 +15,9 @@ html, body {
 }
 
 .main-menu-link:hover {
-  @apply bg-cst-dark text-cst-light;
 }
 
 .footer-menu li:hover {
-  color: theme('colors.cst-light.default');
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -28,10 +26,5 @@ html, body {
 @screen sm {
   .main-menu-link {
     @apply my-2;
-    border-top: 1px solid theme('colors.cst-light.default');
-  }
-
-  ul.main-menu li:last-child {
-    border-bottom: 1px solid theme('colors.cst-light.default');
   }
 }
