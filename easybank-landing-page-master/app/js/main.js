@@ -5,9 +5,9 @@ function toggleMobileMenu() {
   img = document.querySelector('#hamburger img');
   collapsed = !collapsed;
   if (collapsed) {
-    img.setAttribute('src', '../assets/images/icon-hamburger.svg');
+    img.setAttribute('src', '../source/images/icon-hamburger.svg');
   } else {
-    img.setAttribute('src', '../assets/images/icon-close.svg');
+    img.setAttribute('src', '../source/images/icon-close.svg');
   }
 }
 
