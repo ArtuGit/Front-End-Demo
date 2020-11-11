@@ -5,28 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="../source/images/favicon-32x32.png">
   <link href="../dist/css/main.css" rel="stylesheet">
 
-  <title>Frontend Mentor | Easybank landing page</title>
+  <title>Artu | Frontend Mentor | Easybank landing page</title>
 </head>
 
 <body class="font-public-sans h-full leading-normal flex flex-col">
 
 <header
-  class="border bg-cst-neutral-white mx-0 mt-0 mb-10 p-0 w-full flex flex-row flex-nowrap sm:flex-wrap justify-around items-center"
+  class="bg-cst-neutral-white py-4 w-full flex flex-row flex-nowrap sm:flex-wrap justify-around items-center sm:relative"
   id="header">
-  <div class="border mobile-header flex flex-row flex-nowrap justify-around items-center sm:flex-grow sm:w-full">
-    <div id="logo"
-    ><a href="#"><img class="block px-4 py-2" src="../source/images/logo.svg" alt="EasyBank logo"></a></div>
-    <div class="hidden sm:block flex-shrink-0 flex-grow-0 py-1" id="hamburger" role="button" tabindex="0">
+  <div class="mobile-header flex flex-row flex-nowrap justify-between items-center sm:flex-grow sm:w-full">
+    <div id="logo" class="sm:ml-2">
+      <a href="#">
+        <img class="block px-4 py-2 sm:h-12" src="../source/images/logo.svg" alt="EasyBank logo">
+      </a>
+    </div>
+    <div class="hidden sm:block sm:mr-8 flex-shrink-0 flex-grow-0 py-1" id="hamburger" role="button" tabindex="0">
       <img alt="" src="../source/images/icon-hamburger.svg">
     </div>
   </div>
 
-  <nav class="border bg-cst-dark-lighter self-stretch sm:flex-grow-0 sm:w-full sm:hidden" id="nav">
+  <nav class="bg-cst-dark-lighter self-stretch text-cst-neutral-grayishblue
+        sm:flex-grow-0 sm:hidden sm:text-center sm:block sm:absolute sm:border sm:py-6
+        sm:bg-cst-neutral-white sm:text-cst-primary-darkblue sm:w-11/12 sm:font-bold"
+       id="nav">
     <ul
-      class="main-menu h-full text-cst-light-darker flex flex-row sm:flex-col flex-nowrap justify-around items-stretch sm:text-center">
+      class="main-menu h-full flex flex-row sm:flex-col flex-nowrap justify-around items-stretch">
       <li><a class="main-menu-link active" href="#">Home</a></li>
       <li><a class="main-menu-link" href="#">About</a></li>
       <li><a class="main-menu-link" href="#">Contact</a></li>
@@ -35,17 +42,18 @@
     </ul>
   </nav>
 
-  <div class="border search-container hidden lg:inline-block">
+  <div id="invite-button" class="hidden lg:inline-block">
     <form>
-      <input class="px-2 bg-cst-light" name="search" placeholder="Search..." type="text">
-      <button type="submit" onclick="dummyHandler();" ><i class="fa fa-search text-cst-light text-xl"></i></button>
+      <button
+        class="px-10 py-2 text-base text-cst-neutral-white font-bold rounded-3xl bg-gradient-to-r from-cst-primary-limegreen to-cst-primary-brightcyan hover:from-cst-primary-brightcyan hover:to-cst-primary-limegreen" type="submit" onclick="dummyHandler();">Request Invite
+      </button>
     </form>
   </div>
 </header>
 
-<main class="flex-grow flex-shrink-0">
-  <section class="border hero bg-cst-neutral-verylightgray">
-    Next generation digital banking
+<main class="border flex-grow flex-shrink-0">
+  <section class="border h-64  hero bg-cst-neutral-verylightgray">
+    <h1>Next generation digital banking</h1>
 
     Take your financial life online. Your Easybank account will be a one-stop-shop
     for spending, saving, budgeting, investing, and much more.
@@ -54,7 +62,7 @@
   </section>
 
   <section class="border why bg-cst-neutral-lightgrayishblue">
-    Why choose Easybank?
+    <h2>Why choose Easybank?</h2>
 
     We leverage Open Banking to turn your bank account into your financial hub. Control
     your finances like never before.
@@ -78,7 +86,7 @@
   </section>
 
   <section class="border articles bg-cst-neutral-verylightgray">
-    Latest Articles
+    <h2>Latest Articles</h2>
 
     By Claire Robinson
     Receive money in any currency with no fees

@@ -6,8 +6,16 @@ html, body {
   height: 100%;
 }
 
+h1{
+  @apply text-4xl;
+}
+
+h2{
+  @apply text-3xl;
+}
+
 .main-menu-link {
-  @apply text-xl px-4 pt-1 block;
+  @apply text-base font-normal leading-loose px-4 pt-1 block;
 }
 
 .main-menu-link.active {
@@ -24,7 +32,10 @@ html, body {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @screen sm {
+  #nav{
+    top: 7rem;
+  }
   .main-menu-link {
-    @apply my-2;
+    @apply my-1;
   }
 }
