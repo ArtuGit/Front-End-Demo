@@ -23,10 +23,35 @@ h2{
 }
 
 .main-menu-link:hover {
+  @apply text-cst-primary-darkblue;
 }
 
 .footer-menu li:hover {
 }
+
+.invite-button {
+  @apply px-10 py-2 text-base text-cst-neutral-white font-bold rounded-3xl
+  bg-gradient-to-r from-cst-primary-limegreen to-cst-primary-brightcyan
+
+}
+
+.invite-button:hover {
+  @apply from-cst-primary-brightcyan to-cst-primary-limegreen;
+}
+
+/*Intro */
+
+.intro {
+  min-height: 20rem;
+}
+
+.intro2 {
+  background-image: url('../../source/images/image-plane.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -37,5 +62,9 @@ h2{
   }
   .main-menu-link {
     @apply my-1;
+  }
+
+  .main-menu-link:hover {
+    @apply text-cst-neutral-grayishblue;
   }
 }

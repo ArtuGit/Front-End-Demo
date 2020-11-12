@@ -10938,9 +10938,48 @@ h2{
 }
 
 .main-menu-link:hover {
+  --text-opacity: 1;
+  color: hsl(233, 26%, 24%);
+  color: rgba(45.288, 49.000799999999984, 77.112, var(--text-opacity));
 }
 
 .footer-menu li:hover {
+}
+
+.invite-button {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  --text-opacity: 1;
+  color: hsl(0, 0%, 100%);
+  color: rgba(255, 255, 255, var(--text-opacity));
+  font-weight: 700;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(to right, var(--gradient-color-stops));
+  --gradient-from-color: hsl(136, 65%, 51%);
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(48.832499999999975, 211.26750000000004, 92.14849999999998, 0));
+  --gradient-to-color: hsl(192, 70%, 51%)
+}
+
+.invite-button:hover {
+  --gradient-from-color: hsl(192, 70%, 51%);
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(42.58500000000001, 182.52899999999997, 217.515, 0));
+  --gradient-to-color: hsl(136, 65%, 51%);
+}
+
+/*Intro */
+
+.intro {
+  min-height: 20rem;
+}
+
+.intro2 {
+  background-image: url('../../source/images/image-plane.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .attribution { font-size: 11px; text-align: center;
@@ -10957,6 +10996,12 @@ h2{
   .main-menu-link {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
+  }
+
+  .main-menu-link:hover {
+    --text-opacity: 1;
+    color: hsl(233, 8%, 62%);
+    color: rgba(150.348, 152.1568, 165.852, var(--text-opacity));
   }
 }
 

@@ -29,7 +29,7 @@
   </div>
 
   <nav class="bg-cst-dark-lighter self-stretch text-cst-neutral-grayishblue
-        sm:flex-grow-0 sm:hidden sm:text-center sm:block sm:absolute sm:border sm:py-6
+        sm:flex-grow-0 sm:hidden sm:text-center sm:block sm:absolute sm:border sm:py-6 sm:z-40
         sm:bg-cst-neutral-white sm:text-cst-primary-darkblue sm:w-11/12 sm:font-bold"
        id="nav">
     <ul
@@ -42,23 +42,42 @@
     </ul>
   </nav>
 
-  <div id="invite-button" class="hidden lg:inline-block">
+  <div class="invite hidden lg:inline-block">
     <form>
       <button
-        class="px-10 py-2 text-base text-cst-neutral-white font-bold rounded-3xl bg-gradient-to-r from-cst-primary-limegreen to-cst-primary-brightcyan hover:from-cst-primary-brightcyan hover:to-cst-primary-limegreen" type="submit" onclick="dummyHandler();">Request Invite
+        class="invite-button" onclick="dummyHandler();" type="submit">Request Invite
       </button>
     </form>
   </div>
 </header>
 
 <main class="border flex-grow flex-shrink-0">
-  <section class="border h-64  hero bg-cst-neutral-verylightgray">
-    <h1>Next generation digital banking</h1>
+  <div class="hidden z-20 absolute w-full h-screen opacity-50
+       bg-gradient-to-b from-cst-primary-darkblue to-cst-neutral-verylightgray" id="background-mobile">
+  </div>
 
-    <p class="paragraph">Take your financial life online. Your Easybank account will be a one-stop-shop
-      for spending, saving, budgeting, investing, and much more.</p>
+  <section class="border intro bg-cst-neutral-verylightgray
+            flex flex-row justify-between items-stretch">
 
-    Request Invite
+    <div class="intro1 border-4 w-2/5
+         flex flex-col justify-center items-center">
+      <h1>Next generation digital banking</h1>
+
+      <p class="paragraph">Take your financial life online. Your Easybank account will be a one-stop-shop
+        for spending, saving, budgeting, investing, and much more.</p>
+
+      <div class="invite">
+        <form>
+          <button
+            class="invite-button" onclick="dummyHandler();" type="submit">Request Invite
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="intro2 border-4 w-3/5">
+        Intro 2
+    </div>
   </section>
 
   <section class="border why bg-cst-neutral-lightgrayishblue">
@@ -146,7 +165,7 @@
 </main>
 
 <footer
-  class="bg-cst-primary-darkblue mt-10 text-cst-light-darker p-4 gap-6 flex-shrink-0 flex flex-row flex-wrap justify-around items-center"
+  class="bg-cst-primary-darkblue text-cst-light-darker p-4 gap-6 flex-shrink-0 flex flex-row flex-wrap justify-around items-center"
   id="footer">
   <div class="item-footer">
     <ul class="footer-menu leading-relaxed">

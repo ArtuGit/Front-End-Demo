@@ -2,6 +2,7 @@ let collapsed = true;
 
 function toggleMobileMenu() {
   document.getElementById("nav").classList.toggle("sm:hidden");
+  document.getElementById("background-mobile").classList.toggle("sm:block");
   img = document.querySelector('#hamburger img');
   collapsed = !collapsed;
   if (collapsed) {
