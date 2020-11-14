@@ -8,6 +8,7 @@ html, body {
 
 h1{
   @apply text-5xl font-light;
+  line-height: 3.5rem;
 }
 
 h2{
@@ -66,32 +67,28 @@ h2{
 
   .intro2 {
     /* Background image proportion: h/w = 1.128 */
-    width: 97vw;
-    height: 92vw;
+    width: 100%;
+    height: 90vw;
     background-image: url('../../source/images/bg-intro-mobile.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: left 0 top 0;
-    position: relative;
-    overflow: hidden;
   }
 
   .intro-image2 {
     /* Background image proportion: h/w = 1.22425032595 */
-    width: 97vw;
+    width: 100%;
     height: 100%;
     background-image: url('../../source/images/image-mockups.png');
     background-repeat: no-repeat;
-    background-position: left 0 bottom 0;
+    background-position: left 0 bottom -1rem;
     background-size: 100%;
-    position: relative;
   }
 
 }
 
 @screen md {
   /*Intro */
-
   .intro {
     min-height: 38rem;
   }
