@@ -10977,6 +10977,10 @@ h2{
   --gradient-to-color: hsl(136, 65%, 51%);
 }
 
+.card1{
+  border-width: 1px;
+}
+
 .attribution { font-size: 11px; text-align: center;
 }
 
@@ -11026,8 +11030,6 @@ h2{
 }
 
 @media (min-width: 768px) {
-  /*Intro */
-
   .intro {
     min-height: 38rem;
   }
@@ -11050,6 +11052,11 @@ h2{
     background-image: url('../../source/images/image-mockups.png');
     background-repeat: no-repeat;
     background-position: right -8rem top -8rem;
+    position: absolute;
+  }
+
+  .why {
+    min-height: 38rem;
   }
 }
 

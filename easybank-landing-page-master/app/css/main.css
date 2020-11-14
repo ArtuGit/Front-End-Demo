@@ -44,6 +44,10 @@ h2{
   @apply from-cst-primary-brightcyan to-cst-primary-limegreen;
 }
 
+.card1{
+  @apply border;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -88,7 +92,7 @@ h2{
 }
 
 @screen md {
-  /*Intro */
+
   .intro {
     min-height: 38rem;
   }
@@ -111,5 +115,10 @@ h2{
     background-image: url('../../source/images/image-mockups.png');
     background-repeat: no-repeat;
     background-position: right -8rem top -8rem;
+    position: absolute;
+  }
+
+  .why {
+    min-height: 38rem;
   }
 }
