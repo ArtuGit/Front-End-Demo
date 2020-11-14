@@ -10916,11 +10916,18 @@ html, body {
 }
 
 h1{
-  font-size: 2.25rem;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 h2{
   font-size: 1.875rem;
+}
+
+.paragraph {
+  --text-opacity: 1;
+  color: hsl(233, 8%, 62%);
+  color: rgba(150.348, 152.1568, 165.852, var(--text-opacity));
 }
 
 .main-menu-link {
@@ -10969,19 +10976,6 @@ h2{
   --gradient-to-color: hsl(136, 65%, 51%);
 }
 
-/*Intro */
-
-.intro {
-  min-height: 20rem;
-}
-
-.intro2 {
-  background-image: url('../../source/images/image-plane.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
 .attribution { font-size: 11px; text-align: center;
 }
 
@@ -10989,7 +10983,7 @@ h2{
 }
 
 @media (min-width: 1px) and (max-width: 767px) {
-  #nav{
+  #nav {
     top: 7rem;
   }
 
@@ -11002,6 +10996,62 @@ h2{
     --text-opacity: 1;
     color: hsl(233, 8%, 62%);
     color: rgba(150.348, 152.1568, 165.852, var(--text-opacity));
+  }
+
+  .intro1 {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .intro2 {
+    /* Background image proportion: h/w = 1.128 */
+    width: 97vw;
+    height: 92vw;
+    background-image: url('../../source/images/bg-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left 0 top 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .intro-image2 {
+    /* Background image proportion: h/w = 1.22425032595 */
+    width: 97vw;
+    height: 100%;
+    background-image: url('../../source/images/image-mockups.png');
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 0;
+    background-size: 100%;
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  /*Intro */
+
+  .intro {
+    min-height: 38rem;
+  }
+
+  .intro1{
+    padding-left: 7%;
+  }
+
+  .intro2 {
+    background-image: url('../../source/images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right -15rem top -10rem;
+    /* Background image proportion: 0.813532651456 */
+    background-size: 70rem 56.95rem;
+  }
+
+  .intro-image2 {
+    height: 50rem;
+    width: 100%;
+    background-image: url('../../source/images/image-mockups.png');
+    background-repeat: no-repeat;
+    background-position: right -8rem top -8rem;
   }
 }
 

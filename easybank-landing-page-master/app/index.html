@@ -56,17 +56,20 @@
        bg-gradient-to-b from-cst-primary-darkblue to-cst-neutral-verylightgray" id="background-mobile">
   </div>
 
-  <section class="border intro bg-cst-neutral-verylightgray
-            flex flex-row justify-between items-stretch">
+  <section class="border intro bg-cst-neutral-lightgrayishblue
+           flex flex-row justify-between items-stretch
+           sm:flex-col">
 
-    <div class="intro1 border-4 w-2/5
-         flex flex-col justify-center items-center">
-      <h1>Next generation digital banking</h1>
+    <div class="intro1 border
+         md: w-2/5 md:flex-shrink-1 sm:w-full sm:py-12
+         flex flex-col justify-center items-start
+         sm: items-center">
+      <h1 class="border">Next generation <br> digital banking</h1>
 
-      <p class="paragraph">Take your financial life online. Your Easybank account will be a one-stop-shop
+      <p class="border paragraph my-10">Take your financial life online. Your Easybank account will be a one-stop-shop
         for spending, saving, budgeting, investing, and much more.</p>
 
-      <div class="invite">
+      <div class="border invite">
         <form>
           <button
             class="invite-button" onclick="dummyHandler();" type="submit">Request Invite
@@ -75,8 +78,12 @@
       </div>
     </div>
 
-    <div class="intro2 border-4 w-3/5">
-        Intro 2
+    <div class="intro2 border-4
+         md:w-3/5 md:flex-shrink-0 md:relative
+         sm:order-first">
+      <div class="border intro-image2
+           md:absolute">
+      </div>
     </div>
   </section>
 
@@ -181,7 +188,7 @@
   <div class="item-footer">
     <span> &copy; Copyright </span>
     <script>
-      document.write(new Date().getFullYear());
+      document.write(new Date().getFullYear().toString());
     </script>
     <span>. All rights reserved.</span>
   </div>
