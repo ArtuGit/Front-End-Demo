@@ -2,13 +2,12 @@ let collapsed = true;
 
 function toggleMobileMenu() {
   document.getElementById("nav").classList.toggle("sm:hidden");
-  document.getElementById("background-mobile").classList.toggle("sm:block");
   img = document.querySelector('#hamburger img');
   collapsed = !collapsed;
   if (collapsed) {
-    img.setAttribute('src', '../source/images/icon-hamburger.svg');
+    img.setAttribute('src', '../assets/images/icon-hamburger.svg');
   } else {
-    img.setAttribute('src', '../source/images/icon-close.svg');
+    img.setAttribute('src', '../assets/images/icon-close.svg');
   }
 }
 

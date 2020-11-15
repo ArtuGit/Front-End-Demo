@@ -11,7 +11,18 @@ Used Technologies:
 - HTML5
 - CSS3: FlexBox
 
+### [Tailwind Demo](https://artugit.github.io/Front-End-Demo/tailwind/app/index.html)
+Used Technologies:
+- HTML5
+- CSS3: FlexBox
+- Tailwind
+
 ### [CSS Flexbox Demo](https://artugit.github.io/Front-End-Demo/flexbox)
 Used Technologies:
 - HTML5
 - CSS3: FlexBox
+
+### [CSS Grid Demo](https://artugit.github.io/Front-End-Demo/css-grid)
+Used Technologies:
+- HTML5
+- CSS3: CSS Grid
