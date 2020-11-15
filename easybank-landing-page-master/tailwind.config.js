@@ -30,6 +30,9 @@ module.exports = {
       },
     },
     extend: {
+      container: {
+        center: true,
+      },
       fontFamily: {
         'public-sans': ['Public Sans', 'sans-serif']
       },

@@ -12,7 +12,13 @@ h1{
 }
 
 h2{
-  @apply text-3xl;
+  @apply text-4xl font-light;
+}
+
+.container-80{
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .paragraph {
@@ -45,7 +51,40 @@ h2{
 }
 
 .card1{
+  border: 2px solid rebeccapurple;
+}
+
+.card1-icon{
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   @apply border;
+}
+
+.icon-online{
+  background-image: url('../../source/images/icon-online.svg');
+}
+
+.icon-budgeting{
+  background-image: url('../../source/images/icon-budgeting.svg');
+}
+
+.icon-onboarding{
+  background-image: url('../../source/images/icon-onboarding.svg');
+}
+
+.icon-api{
+  background-image: url('../../source/images/icon-api.svg');
+}
+
+.card1-caption{
+  @apply text-2xl font-light my-6;
+}
+
+.card1-desc{
+  @apply text-cst-neutral-grayishblue;
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -89,6 +128,10 @@ h2{
     background-size: 100%;
   }
 
+  .card1{
+    @apply flex flex-col justify-center items-center;
+  }
+
 }
 
 @screen md {
@@ -120,5 +163,9 @@ h2{
 
   .why {
     min-height: 38rem;
+  }
+
+  .card1{
+    @apply flex flex-col justify-center items-start;
   }
 }

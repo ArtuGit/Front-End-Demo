@@ -588,6 +588,8 @@ video {
 
 .container {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 1px) {
@@ -10922,7 +10924,14 @@ h1{
 }
 
 h2{
-  font-size: 1.875rem;
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.container-80{
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .paragraph {
@@ -10978,7 +10987,45 @@ h2{
 }
 
 .card1{
+  border: 2px solid rebeccapurple;
+}
+
+.card1-icon{
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   border-width: 1px;
+}
+
+.icon-online{
+  background-image: url('../../source/images/icon-online.svg');
+}
+
+.icon-budgeting{
+  background-image: url('../../source/images/icon-budgeting.svg');
+}
+
+.icon-onboarding{
+  background-image: url('../../source/images/icon-onboarding.svg');
+}
+
+.icon-api{
+  background-image: url('../../source/images/icon-api.svg');
+}
+
+.card1-caption{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card1-desc{
+  --text-opacity: 1;
+  color: hsl(233, 8%, 62%);
+  color: rgba(150.348, 152.1568, 165.852, var(--text-opacity));
 }
 
 .attribution { font-size: 11px; text-align: center;
@@ -11027,6 +11074,13 @@ h2{
     background-position: left 0 bottom -1rem;
     background-size: 100%;
   }
+
+  .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -11058,11 +11112,20 @@ h2{
   .why {
     min-height: 38rem;
   }
+
+  .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 @media (min-width: 1px) and (max-width: 767px) {
   .sm\:container {
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: 1px) {
@@ -21324,6 +21387,8 @@ h2{
 @media (min-width: 768px) {
   .md\:container {
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: 1px) {
@@ -31585,6 +31650,8 @@ h2{
 @media (min-width: 1024px) {
   .lg\:container {
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: 1px) {
@@ -41846,6 +41913,8 @@ h2{
 @media (min-width: 1280px) {
   .xl\:container {
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: 1px) {
