@@ -50,8 +50,8 @@ h2{
   @apply from-cst-primary-brightcyan to-cst-primary-limegreen;
 }
 
-.card1{
-  border: 2px solid rebeccapurple;
+.card1, .card2{
+  border: 1px solid rebeccapurple;
 }
 
 .card1-icon{
@@ -87,6 +87,29 @@ h2{
   @apply text-cst-neutral-grayishblue;
 }
 
+.card2{
+  @apply rounded-md shadow-sm;
+}
+
+.card2-img{
+  @apply block h-full;
+}
+
+.card2-wrapper{
+  @apply bg-cst-neutral-white p-4;
+}
+
+.card2-author{
+  @apply text-cst-neutral-grayishblue text-xs mt-3;
+}
+
+.card2-caption{
+  @apply text-xl mt-3;
+}
+
+.card2-desc{
+  @apply text-cst-neutral-grayishblue text-sm mt-3;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -132,6 +155,10 @@ h2{
     @apply flex flex-col justify-center items-center;
   }
 
+  .card2{
+    @apply flex flex-col justify-center items-center;
+  }
+
 }
 
 @screen md {
@@ -168,4 +195,25 @@ h2{
   .card1{
     @apply flex flex-col justify-center items-start;
   }
+
+  .articles {
+    min-height: 38rem;
+  }
+
+  .card2{
+    @apply flex flex-col justify-center items-start;
+  }
+
+  .card1, .card2 {
+    @apply mb-5;
+    width: 45%;
+  }
+}
+
+@screen lg {
+
+  .card1, .card2 {
+     width: 23%;
+  }
+
 }

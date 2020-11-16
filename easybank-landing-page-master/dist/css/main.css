@@ -604,15 +604,15 @@ video {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 1024px;
+    max-width: 1200px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1500px) {
   .container {
-    max-width: 1280px;
+    max-width: 1500px;
   }
 }
 
@@ -10986,8 +10986,8 @@ h2{
   --gradient-to-color: hsl(136, 65%, 51%);
 }
 
-.card1{
-  border: 2px solid rebeccapurple;
+.card1, .card2{
+  border: 1px solid rebeccapurple;
 }
 
 .card1-icon{
@@ -11026,6 +11026,44 @@ h2{
   --text-opacity: 1;
   color: hsl(233, 8%, 62%);
   color: rgba(150.348, 152.1568, 165.852, var(--text-opacity));
+}
+
+.card2{
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card2-img{
+  display: block;
+  height: 100%;
+}
+
+.card2-wrapper{
+  --bg-opacity: 1;
+  background-color: hsl(0, 0%, 100%);
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  padding: 1rem;
+}
+
+.card2-author{
+  --text-opacity: 1;
+  color: hsl(233, 8%, 62%);
+  color: rgba(150.348, 152.1568, 165.852, var(--text-opacity));
+  font-size: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.card2-caption{
+  font-size: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.card2-desc{
+  --text-opacity: 1;
+  color: hsl(233, 8%, 62%);
+  color: rgba(150.348, 152.1568, 165.852, var(--text-opacity));
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
 }
 
 .attribution { font-size: 11px; text-align: center;
@@ -11081,6 +11119,13 @@ h2{
     justify-content: center;
     align-items: center;
   }
+
+  .card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -11119,6 +11164,28 @@ h2{
     justify-content: center;
     align-items: flex-start;
   }
+
+  .articles {
+    min-height: 38rem;
+  }
+
+  .card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .card1, .card2 {
+    margin-bottom: 1.25rem;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card1, .card2 {
+    width: 23%;
+  }
 }
 
 @media (min-width: 1px) and (max-width: 767px) {
@@ -11140,15 +11207,15 @@ h2{
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .sm\:container {
-      max-width: 1024px;
+      max-width: 1200px;
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1500px) {
     .sm\:container {
-      max-width: 1280px;
+      max-width: 1500px;
     }
   }
 
@@ -21403,15 +21470,15 @@ h2{
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .md\:container {
-      max-width: 1024px;
+      max-width: 1200px;
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1500px) {
     .md\:container {
-      max-width: 1280px;
+      max-width: 1500px;
     }
   }
 
@@ -31647,7 +31714,7 @@ h2{
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .lg\:container {
     width: 100%;
     margin-right: auto;
@@ -31666,15 +31733,15 @@ h2{
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .lg\:container {
-      max-width: 1024px;
+      max-width: 1200px;
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1500px) {
     .lg\:container {
-      max-width: 1280px;
+      max-width: 1500px;
     }
   }
 
@@ -41910,7 +41977,7 @@ h2{
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1500px) {
   .xl\:container {
     width: 100%;
     margin-right: auto;
@@ -41929,15 +41996,15 @@ h2{
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .xl\:container {
-      max-width: 1024px;
+      max-width: 1200px;
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1500px) {
     .xl\:container {
-      max-width: 1280px;
+      max-width: 1500px;
     }
   }
 
