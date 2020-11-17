@@ -89,10 +89,11 @@ h2{
 
 .card2{
   @apply rounded-md shadow-sm;
+
 }
 
 .card2-img{
-  @apply block h-full;
+  @apply block;
 }
 
 .card2-wrapper{
@@ -110,8 +111,14 @@ h2{
 .card2-desc{
   @apply text-cst-neutral-grayishblue text-sm mt-3;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.item-footer ul{
+  @apply text-sm;
+}
+
+#copy{
+  @apply text-xs text-cst-neutral-grayishblue;
+}
 
 @screen sm {
   #nav {
@@ -159,6 +166,10 @@ h2{
     @apply flex flex-col justify-center items-center;
   }
 
+  .why, .articles{
+    @apply mb-16;
+  }
+
 }
 
 @screen md {
@@ -201,18 +212,23 @@ h2{
   }
 
   .card2{
-    @apply flex flex-col justify-center items-start;
+    @apply flex flex-col justify-start items-start;
   }
 
   .card1, .card2 {
-    @apply mb-5;
+    @apply mb-6;
     width: 45%;
+  }
+
+  footer {
+    min-height: 12rem;
   }
 }
 
 @screen lg {
 
   .card1, .card2 {
+     @apply mb-0;
      width: 23%;
   }
 

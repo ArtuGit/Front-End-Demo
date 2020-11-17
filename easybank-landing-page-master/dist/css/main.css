@@ -11035,7 +11035,6 @@ h2{
 
 .card2-img{
   display: block;
-  height: 100%;
 }
 
 .card2-wrapper{
@@ -11066,10 +11065,15 @@ h2{
   margin-top: 0.75rem;
 }
 
-.attribution { font-size: 11px; text-align: center;
+.item-footer ul{
+  font-size: 0.875rem;
 }
 
-.attribution a { color: hsl(228, 45%, 44%);
+#copy{
+  font-size: 0.75rem;
+  --text-opacity: 1;
+  color: hsl(233, 8%, 62%);
+  color: rgba(150.348, 152.1568, 165.852, var(--text-opacity));
 }
 
 @media (min-width: 1px) and (max-width: 767px) {
@@ -11126,6 +11130,10 @@ h2{
     justify-content: center;
     align-items: center;
   }
+
+  .why, .articles{
+    margin-bottom: 4rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -11172,18 +11180,23 @@ h2{
   .card2{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
   .card1, .card2 {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     width: 45%;
+  }
+
+  footer {
+    min-height: 12rem;
   }
 }
 
 @media (min-width: 1200px) {
   .card1, .card2 {
+    margin-bottom: 0;
     width: 23%;
   }
 }

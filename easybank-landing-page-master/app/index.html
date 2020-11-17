@@ -4,7 +4,6 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="../source/images/favicon-32x32.png">
   <link href="../dist/css/main.css" rel="stylesheet">
@@ -18,7 +17,7 @@
   class="bg-cst-neutral-white py-4 w-full flex flex-row flex-nowrap sm:flex-wrap justify-around items-center sm:relative"
   id="header">
   <div class="mobile-header flex flex-row flex-nowrap justify-between items-center sm:flex-grow sm:w-full">
-    <div id="logo" class="sm:ml-2">
+    <div class="logo sm:ml-2">
       <a href="#">
         <img class="block px-4 py-2 sm:h-12" src="../source/images/logo.svg" alt="EasyBank logo">
       </a>
@@ -142,10 +141,9 @@
       <h2 class="mb-5">Latest Articles</h2>
       <div class="border cards2 mt-5
            flex flex-row justify-between items-stretch
-           md:flex-wrap sm:flex-col sm:justify-center sm:items-center
-           sm: mb-5">
+           md:flex-wrap sm:flex-col sm:justify-center sm:items-center">
         <div class="card2">
-          <img src="../source/images/image-currency.jpg" alt="" class="card2-img">
+          <div class="card2-img-wrapper"><img src="../source/images/image-currency.jpg" alt="" class="card2-img"></div>
           <div class="card2-wrapper">
             <div class="card2-author">By Claire Robinson</div>
             <div class="card2-caption">Receive money in any currency with no fees</div>
@@ -157,7 +155,7 @@
         </div>
 
         <div class="card2">
-          <img src="../source/images/image-restaurant.jpg" alt="" class="card2-img">
+          <div class="card2-img-wrapper"><img src="../source/images/image-restaurant.jpg" alt="" class="card2-img"></div>
           <div class="card2-wrapper">
             <div class="card2-author">By Wilson Hutton</div>
             <div class="card2-caption">Treat yourself without worrying about money</div>
@@ -169,7 +167,7 @@
         </div>
 
         <div class="card2">
-          <img src="../source/images/image-plane.jpg" alt="" class="card2-img">
+          <div class="card2-img-wrapper"><img src="../source/images/image-plane.jpg" alt="" class="card2-img"></div>
           <div class="card2-wrapper">
             <div class="card2-author">By Wilson Hutton</div>
             <div class="card2-caption">Take your Easybank card wherever you go</div>
@@ -181,7 +179,7 @@
         </div>
 
         <div class="card2">
-          <img src="../source/images/image-confetti.jpg" alt="" class="card2-img">
+          <div class="card2-img-wrapper"><img src="../source/images/image-confetti.jpg" alt="" class="card2-img"></div>
           <div class="card2-wrapper">
             <div class="card2-author">By Claire Robinson</div>
             <div class="card2-caption">Our invite-only Beta accounts are now live!</div>
@@ -197,49 +195,47 @@
 
   </section>
 
-  <div class="hidden">
-
-    Request Invite
-
-    About Us
-    Contact
-    Blog
-    Careers
-    Support
-    Privacy Policy
-
-    Request Invite
-
-    © Easybank. All Rights Reserved
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </div>
-
 </main>
 
-<footer
-  class="bg-cst-primary-darkblue text-cst-light-darker p-4 gap-6 flex-shrink-0 flex flex-row flex-wrap justify-around items-center"
-  id="footer">
+<footer class="bg-cst-primary-darkblue text-cst-neutral-lightgrayishblue p-4 gap-6 flex-shrink-0
+        flex flex-row flex-wrap justify-around items-center"
+        id="footer">
+  <div class="item-footer">
+    <div id="logo" class="sm:ml-2">
+      <a href="#">
+        <img class="block px-4 py-2" src="./images/logo.svg" alt="EasyBank logo">
+      </a>
+    </div>
+    <div class="icons flex flex-row">
+      <i><a href="#"><img src="../source/images/icon-facebook.svg" alt=""></a></i>
+      <i><a href="#"><img src="../source/images/icon-youtube.svg" alt=""></a></i>
+      <i><a href="#"><img src="../source/images/icon-twitter.svg" alt=""></a></i>
+      <i><a href="#"><img src="../source/images/icon-pinterest.svg" alt=""></a></i>
+      <i><a href="#"><img src="../source/images/icon-instagram.svg" alt=""></a></i>
+    </div>
+  </div>
   <div class="item-footer">
     <ul class="footer-menu leading-relaxed">
-      <li><a href="#">Menu Item 1</a></li>
-      <li><a href="#">Menu Item 2</a></li>
-      <li><a href="#">Menu Item 3</a></li>
-      <li><a href="#">Menu Item 4</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
     </ul>
   </div>
   <div class="item-footer">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi? Lorem ipsum dolor.</p>
+    <ul class="footer-menu leading-relaxed">
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
   </div>
   <div class="item-footer">
-    <span> &copy; Copyright </span>
-    <script>
-      document.write(new Date().getFullYear().toString());
-    </script>
-    <span>. All rights reserved.</span>
+    <div class="invite">
+      <form>
+        <button class="invite-button" onclick="dummyHandler();" type="submit">Request Invite
+        </button>
+      </form>
+    </div>
+    <div><span id="copy">© Easybank. All Rights Reserved</span></div>
   </div>
 </footer>
 
