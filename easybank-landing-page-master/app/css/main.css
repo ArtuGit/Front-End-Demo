@@ -108,15 +108,27 @@ h2{
   @apply text-xl mt-3;
 }
 
-.card2-desc{
+.card2-desc {
   @apply text-cst-neutral-grayishblue text-sm mt-3;
 }
 
-.item-footer ul{
+.item-footer ul {
   @apply text-sm;
 }
 
-#copy{
+.item-footer ul li {
+  @apply leading-8 text-center;
+}
+
+.item-footer ul li:hover {
+  @apply text-cst-neutral-white;
+}
+
+.icons i {
+  @apply mx-2;
+}
+
+#copy {
   @apply text-xs text-cst-neutral-grayishblue;
 }
 
@@ -134,8 +146,8 @@ h2{
   }
 
   .intro1 {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .intro2 {
@@ -158,16 +170,24 @@ h2{
     background-size: 100%;
   }
 
-  .card1{
+  .card1 {
     @apply flex flex-col justify-center items-center;
   }
 
-  .card2{
+  .card2 {
     @apply flex flex-col justify-center items-center;
   }
 
-  .why, .articles{
-    @apply mb-16;
+  .card2-img-wrapper {
+    @apply border w-full;
+  }
+
+  .card2-img {
+    @apply border w-full;
+  }
+
+  .why, .articles {
+    @apply py-8;
   }
 
 }
@@ -178,8 +198,8 @@ h2{
     min-height: 38rem;
   }
 
-  .intro1{
-    padding-left: 7%;
+  .intro1 {
+    padding-left: 10%;
   }
 
   .intro2 {
