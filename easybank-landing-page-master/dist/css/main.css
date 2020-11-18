@@ -10986,17 +10986,12 @@ h2{
   --gradient-to-color: hsl(136, 65%, 51%);
 }
 
-.card1, .card2{
-  border: 1px solid rebeccapurple;
-}
-
 .card1-icon{
   width: 72px;
   height: 72px;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  border-width: 1px;
 }
 
 .icon-online{
@@ -11162,12 +11157,10 @@ h2{
   }
 
   .card2-img-wrapper {
-    border-width: 1px;
     width: 100%;
   }
 
   .card2-img {
-    border-width: 1px;
     width: 100%;
   }
 

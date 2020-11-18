@@ -50,17 +50,12 @@ h2{
   @apply from-cst-primary-brightcyan to-cst-primary-limegreen;
 }
 
-.card1, .card2{
-  border: 1px solid rebeccapurple;
-}
-
 .card1-icon{
   width: 72px;
   height: 72px;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  @apply border;
 }
 
 .icon-online{
@@ -190,11 +185,11 @@ h2{
   }
 
   .card2-img-wrapper {
-    @apply border w-full;
+    @apply w-full;
   }
 
   .card2-img {
-    @apply border w-full;
+    @apply w-full;
   }
 
   .item-footer ul li {
@@ -214,8 +209,7 @@ h2{
   .card1, .card2 {
     @apply mb-6;
   }
-
-
+  
 }
 
 @screen md {
