@@ -11071,7 +11071,6 @@ h2{
 
 .item-footer ul li {
   line-height: 2rem;
-  text-align: center;
 }
 
 .item-footer ul li:hover {
@@ -11161,6 +11160,10 @@ h2{
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
+  .item-footer ul li {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -11169,7 +11172,7 @@ h2{
   }
 
   .intro1 {
-    padding-left: 10%;
+    padding-left: 10%; /* according to .container-80 */
   }
 
   .intro2 {
