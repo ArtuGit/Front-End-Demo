@@ -132,6 +132,17 @@ h2{
   @apply text-xs text-cst-neutral-grayishblue;
 }
 
+.intro1{
+  @apply py-40;
+}
+.why{
+  @apply py-32;
+}
+.articles{
+  @apply py-24;
+}
+
+
 @screen sm {
   #nav {
     top: 7rem;
@@ -186,13 +197,24 @@ h2{
     @apply border w-full;
   }
 
-  .why, .articles {
-    @apply py-8;
-  }
-
   .item-footer ul li {
     @apply text-center;
   }
+
+  .intro1{
+    @apply pt-6 pb-20;
+  }
+  .why{
+    @apply py-20;
+  }
+  .articles{
+    @apply py-20;
+  }
+
+  .card1, .card2 {
+    @apply mb-6;
+  }
+
 
 }
 

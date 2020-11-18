@@ -11091,6 +11091,21 @@ h2{
   color: rgba(150.348, 152.1568, 165.852, var(--text-opacity));
 }
 
+.intro1{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.why{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.articles{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 @media (min-width: 1px) and (max-width: 767px) {
   #nav {
     top: 7rem;
@@ -11156,13 +11171,27 @@ h2{
     width: 100%;
   }
 
-  .why, .articles {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   .item-footer ul li {
     text-align: center;
+  }
+
+  .intro1{
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .why{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .articles{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .card1, .card2 {
+    margin-bottom: 1.5rem;
   }
 }
 
