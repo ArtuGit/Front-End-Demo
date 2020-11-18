@@ -198,10 +198,6 @@ h2{
 
 @screen md {
 
-  .intro {
-    min-height: 38rem;
-  }
-
   .intro1 {
     padding-left: 10%; /* according to .container-80 */
   }
@@ -223,16 +219,8 @@ h2{
     position: absolute;
   }
 
-  .why {
-    min-height: 38rem;
-  }
-
   .card1{
     @apply flex flex-col justify-center items-start;
-  }
-
-  .articles {
-    min-height: 38rem;
   }
 
   .card2{

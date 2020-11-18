@@ -11167,10 +11167,6 @@ h2{
 }
 
 @media (min-width: 768px) {
-  .intro {
-    min-height: 38rem;
-  }
-
   .intro1 {
     padding-left: 10%; /* according to .container-80 */
   }
@@ -11192,19 +11188,11 @@ h2{
     position: absolute;
   }
 
-  .why {
-    min-height: 38rem;
-  }
-
   .card1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-  }
-
-  .articles {
-    min-height: 38rem;
   }
 
   .card2{
