@@ -61,6 +61,10 @@ html, body {
   @apply text-xl font-bold;
 }
 
+.prose{
+  @apply px-4;
+}
+
 @screen sm {
   .main-menu-link {
     @apply my-2;
