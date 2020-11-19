@@ -9,4 +9,8 @@ TailWind, PostCSS configured with minimal must-have configuration: Autoprefixer,
 `npm run watch`
 
 ## Build
-`npm build`
+`npm run build`
+
+##  Build for production
+`export NODE_ENV=production` // `NODE_ENV=production` on Windows
+`npm run build`
