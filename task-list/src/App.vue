@@ -1,6 +1,6 @@
 <template>
   <!-- component -->
-  <main class="py-10 flex items-center justify-center">
+  <main class="flex items-center justify-center">
     <div class="bg-white border rounded shadow-xl p-6">
       <div class="mb-4">
         <h1 class="text-3xl text-gray-700">Todo List</h1>
