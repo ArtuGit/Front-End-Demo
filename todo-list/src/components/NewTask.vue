@@ -15,7 +15,7 @@
     </button>
   </form>
   <p class="mb-8 text-sm text-gray-400">
-    Task name length should be more than <span class="font-bold">{{ inputMinLength }}</span> characters, currently, you have
+    Task name length should be <span class="font-bold"> more than {{ inputMinLength }}</span> characters, currently, you have
     <span class="font-bold">{{ inputLength }}</span> characters.
   </p>
 
@@ -38,7 +38,6 @@ export default {
   },
   computed: {
     inputLength: function () {
-      console.log('Fireee!');
       return this.name.length;
     },
     inputAllowable: function () {

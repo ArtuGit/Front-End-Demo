@@ -18,6 +18,11 @@
         >
         </task>
       </div>
+    <total
+        :p-total="tasksTotal"
+        :p-done="tasksDone"
+        :p-not-done="tasksNotDone"
+    ></total>
     </div>
   </main>
 </template>
@@ -65,6 +70,19 @@ export default {
         done: false
       };
       this.tasks.unshift(newTask);
+    }
+  },
+  computed: {
+    tasksTotal: function () {
+      return this.tasks.length;
+    },
+    tasksDone: function () {
+      return this.tasks.filter(t => {
+        return  t.done;
+      }).length;
+    },
+    tasksNotDone: function () {
+      return this.tasksTotal-this.tasksDone;
     }
   }
 };
