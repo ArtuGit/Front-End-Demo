@@ -17,11 +17,11 @@
         >
         </task>
       </div>
-    <total
+      <total
         :p-total="tasksTotal"
         :p-done="tasksDone"
         :p-not-done="tasksNotDone"
-    ></total>
+      ></total>
     </section>
   </main>
 </template>
@@ -72,16 +72,16 @@ export default {
     }
   },
   computed: {
-    tasksTotal: function () {
+    tasksTotal: function() {
       return this.tasks.length;
     },
-    tasksDone: function () {
+    tasksDone: function() {
       return this.tasks.filter(t => {
-        return  t.done;
+        return t.done;
       }).length;
     },
-    tasksNotDone: function () {
-      return this.tasksTotal-this.tasksDone;
+    tasksNotDone: function() {
+      return this.tasksTotal - this.tasksDone;
     }
   }
 };

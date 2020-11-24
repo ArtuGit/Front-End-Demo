@@ -15,15 +15,16 @@
     </button>
   </form>
   <p class="mb-8 text-sm text-gray-400">
-    Task name length should be <span class="font-bold"> more than {{ inputMinLength }}</span> characters, currently, you have
+    Task name length should be
+    <span class="font-bold"> more than {{ inputMinLength }}</span> characters,
+    currently, you have
     <span class="font-bold">{{ inputLength }}</span> characters.
   </p>
-
 </template>
 
 <script>
 export default {
-  emits: ["add-task","AddTask"],
+  emits: ["add-task", "AddTask"],
   data() {
     return {
       inputMinLength: 5,
@@ -37,25 +38,24 @@ export default {
     }
   },
   computed: {
-    inputLength: function () {
+    inputLength: function() {
       return this.name.length;
     },
-    inputAllowable: function () {
-      if ((this.inputMinLength - this.inputLength)<0) {
+    inputAllowable: function() {
+      if (this.inputMinLength - this.inputLength < 0) {
         return true;
-      }
-      else {
+      } else {
         return false;
       }
     },
-    classObject: function () {
+    classObject: function() {
       return {
-        'add-active': this.inputAllowable,
-        'add-disabled': !this.inputAllowable
-      }
+        "add-active": this.inputAllowable,
+        "add-disabled": !this.inputAllowable
+      };
     }
   }
-}
+};
 </script>
 
 <style scoped></style>

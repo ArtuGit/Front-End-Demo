@@ -1,6 +1,10 @@
 <template>
-<hr class="mt-6">
-  <div class="mt-4 text-gray-500">Total: <span class="font-bold">{{pTotal}}</span>, Done: <span class="font-bold">{{pDone}}</span>, Not Done: <span class="font-bold">{{pNotDone}}</span></div>
+  <hr class="mt-6" />
+  <div class="mt-4 text-gray-500">
+    Total: <span class="font-bold">{{ pTotal }}</span
+    >, Done: <span class="font-bold">{{ pDone }}</span
+    >, Not Done: <span class="font-bold">{{ pNotDone }}</span>
+  </div>
 </template>
 
 <script>
@@ -19,9 +23,7 @@ export default {
       required: true
     }
   }
-}
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
