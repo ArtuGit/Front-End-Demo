@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  emits: ['add-task'],
+  emits: ["add-task","AddTask"],
   data() {
     return {
       inputMinLength: 5,

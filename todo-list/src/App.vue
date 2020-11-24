@@ -1,7 +1,6 @@
 <template>
-  <!-- component -->
   <main class="flex items-center justify-center">
-    <div class="bg-white border rounded shadow-xl p-6">
+    <section class="todo bg-white border rounded shadow-xl p-6">
       <div class="mb-4">
         <h1 class="text-3xl text-gray-700">Todo List</h1>
         <new-task @add-task="addTask"></new-task>
@@ -23,7 +22,7 @@
         :p-done="tasksDone"
         :p-not-done="tasksNotDone"
     ></total>
-    </div>
+    </section>
   </main>
 </template>
 
