@@ -1,6 +1,6 @@
 <template>
   <!-- component -->
-  <div class="flex items-center justify-center">
+  <main class="py-10 flex items-center justify-center">
     <div class="bg-white border rounded shadow-xl p-6">
       <div class="mb-4">
         <h1 class="text-3xl text-gray-700">Todo List</h1>
@@ -19,7 +19,7 @@
         </task>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -35,12 +35,12 @@ export default {
         {
           id: "2",
           name: 'Mark a task as "Done"',
-          done: false
+          done: true
         },
         {
           id: "3",
           name: 'Mark a task as "Not Done"',
-          done: true
+          done: false
         },
         {
           id: "4",

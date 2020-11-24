@@ -31175,7 +31175,7 @@ video {
 }
 
 html, body {
-  min-height: 99vh;
+  min-height: 100vh;
 }
 
 .done {
@@ -31195,7 +31195,7 @@ html, body {
   border-color: rgba(107, 114, 128, var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgba(107, 114, 128, var(--tw-text-opacity));
-  width: 8rem;
+  min-width: 6rem;
 }
 
 .not-done:hover {

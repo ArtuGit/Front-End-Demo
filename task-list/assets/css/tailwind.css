@@ -8,7 +8,7 @@
 }
 
 html, body {
-  min-height: 99vh;
+  min-height: 100vh;
 }
 
 .done {
@@ -20,7 +20,8 @@ html, body {
 }
 
 .not-done {
-  @apply text-gray-500 border-gray-500 w-32;
+  @apply text-gray-500 border-gray-500;
+  min-width: 6rem;
 }
 
 .not-done:hover {
