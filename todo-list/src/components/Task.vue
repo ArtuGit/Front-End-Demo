@@ -1,6 +1,6 @@
 <template>
   <div class="flex mb-4 items-center">
-    <p class="w-full text-grey-darkest">{{ pName }}</p>
+    <p class="task w-full text-grey-darkest break-all">{{ pName }}</p>
 
     <button
       v-if="pDone"
