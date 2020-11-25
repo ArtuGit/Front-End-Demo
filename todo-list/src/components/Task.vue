@@ -4,7 +4,7 @@
 
     <button
       v-if="pDone"
-      class="text-sm flex-no-shrink flex-grow p-2 ml-12 mr-2 border-2 rounded shadow hover:text-white not-done"
+      class="text-sm flex-no-shrink flex-grow p-2 ml-6 mr-2 border-2 rounded shadow hover:text-white not-done"
       @click="toggleDone"
     >
       Not Done
@@ -12,7 +12,7 @@
 
     <button
       v-else
-      class="text-sm flex-no-shrink p-2 ml-12 mr-2 border-2 rounded shadow hover:text-white done"
+      class="text-sm flex-no-shrink p-2 ml-16 mr-2 border-2 rounded shadow hover:text-white done"
       @click="toggleDone"
     >
       Done
@@ -52,6 +52,9 @@ export default {
     }
   }
 };
+
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

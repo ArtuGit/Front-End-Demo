@@ -88,5 +88,7 @@ export default {
 </script>
 
 <style>
-@import "../dist/css/main.css";
+.todo {
+  max-width: 90%;
+}
 </style>

@@ -11,10 +11,6 @@ html, body {
   min-height: 100vh;
 }
 
-.todo {
-  max-width: 90%;
-}
-
 .done {
   @apply text-green-600 border-green-600;
 }
