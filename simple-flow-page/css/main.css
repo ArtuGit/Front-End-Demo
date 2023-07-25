@@ -15,8 +15,18 @@ body {
 }
 
 h1 {
-  margin: 0 0 2rem 0;
+  margin: 1rem 1rem 0;
+  font-size: 1.8rem;
 }
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h1, h2 {
+  padding-bottom: 1rem;
+}
+
 p {
   margin: 0 0 2rem 0;
 }
@@ -32,7 +42,9 @@ p {
 
 #sidebar {
   flex: 1 0 10rem;
+  align-self: center;
   border: #1a202c 1px solid;
+  padding: 1rem 0.5rem;
 }
 
 main {
@@ -51,5 +63,3 @@ footer > p {
   text-align: center;
   font-size: 1.3rem;
 }
-
-
