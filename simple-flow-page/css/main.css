@@ -2,81 +2,54 @@ html, body {
   /* IE 10-11 didn't like using min-height */
   height: 100%;
 }
-body {
-  display: flex;
-  flex-direction: column;
-}
-#content {
-  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 20px;
-}
-.footer {
-  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 20px;
-}
-
-
 * {
   box-sizing: border-box;
 }
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  font: 16px Sans-Serif;
+  font: 1em Sans-Serif;
+  background: #505750;
 }
+
 h1 {
-  margin: 0 0 20px 0;
+  margin: 0 0 2rem 0;
 }
 p {
-  margin: 0 0 20px 0;
+  margin: 0 0 2rem 0;
 }
+
+
+#content {
+  flex: 1 5 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 20px;
+}
+
+#sidebar {
+  flex: 1 0 10rem;
+  border: #1a202c 1px solid;
+}
+
+main {
+  border: #98c1d9 1px solid;
+  flex: 10 1 0;
+}
+
 footer {
-  background: #42A5F5;
-  color: white;
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  background: #FFFFFF;
+  height: 1.8rem;
 }
-/** {*/
-/*  box-sizing: border-box;*/
-/*}*/
 
-/*body {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  min-height: 100vh;*/
-/*  background: #505750;*/
-/*}*/
-
-/*section {*/
-/*  !*flex: 1;*!*/
-/*  !*flex-grow: 1;*!*/
-/*  !*border: 1px solid #000000;*!*/
-/*}*/
-/*main{*/
-/*  !*border: 1px solid #000000;*!*/
-/*  !*flex-grow: 5;*!*/
-/*}*/
+footer > p {
+  color: #AF0000;
+  text-align: center;
+  font-size: 1.3rem;
+}
 
 
-
-/*footer {*/
-/*  flex-grow: 0;*/
-/*  flex-shrink: 0;*/
-/*  flex-basis: auto;*/
-/*  background: #FFFFFF;*/
-/*  height: 50px;*/
-/*}*/
-
-/*footer > p {*/
-/*  color: #AF0000;*/
-/*  text-align: center;*/
-/*  font-size: 1.3rem;*/
-/*  padding: 1rem;*/
-/*}*/
-
-/*#container-content {*/
-/*  flex-grow: 1;*/
-/*  flex-shrink: 0;*/
-/*  flex-basis: auto;*/
-
-/*  display: flex;*/
-/*  flex-flow: row nowrap;*/
-
-/*}*/
