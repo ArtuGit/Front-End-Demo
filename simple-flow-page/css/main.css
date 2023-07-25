@@ -1,9 +1,26 @@
-* {
-  box-sizing: border-box;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #a0aec0;
 }
 
-html, body {
-  /* IE 10-11 didn't like using min-height */
-  height: 100%;
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  background: #264653;
+  height: 45px;
 }
 
+footer > p {
+  color: #f4a261;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
