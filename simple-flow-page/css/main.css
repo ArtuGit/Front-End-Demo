@@ -19,7 +19,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: #F8F854;
 }
 
 h1, h2 {
@@ -38,11 +39,32 @@ h1, h2 {
   margin: 0 1rem 0 1rem;
 }
 
+#sidebar > h2 {
+  text-transform: uppercase;
+}
+
 #sidebar {
   flex: 1 0 10rem;
   align-self: center;
-  border: #1a202c 1px solid;
-  padding: 1rem 0.5rem;
+  padding: 2rem 2rem;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #fff; /* White border inside the blocks */
+  border-radius: 6px; /* Adjust the radius to match the outer block's border */
+}
+
+#sidebar:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+  background-color: #5454FB;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
 }
 
 main {
@@ -52,18 +74,32 @@ main {
 
 nav {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: space-around;
   list-style: none;
 }
 
-nav > ul li {
-   padding: 0.3rem 0 0.3rem 0;
+nav > ul li a {
+  display: block;
+  padding: 0.3rem 1.5rem;
+  font-size: 1.4rem;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+nav > ul li:hover {
+  background: black;
+}
+
+nav > ul li .active {
+  background-color: #AAAAAA;
+  color: #040402;
+  font-weight: bold;
 }
 
 footer {
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  background: #FFFFFF;
+  background: #FAFAFB;
   height: 1.8rem;
 }
 
@@ -71,6 +107,12 @@ footer > p {
   color: #AF0000;
   text-align: center;
   font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#year {
+  color: black;
+  font-weight: normal;
 }
 
 @media all and (max-width: 900px) {
@@ -101,3 +143,5 @@ footer > p {
     padding: 0 1rem 0 1rem;
   }
 }
+
+

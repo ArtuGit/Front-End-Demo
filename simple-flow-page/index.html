@@ -10,12 +10,12 @@
 
     <div id ="content">
         <section id="sidebar" class="content-block">
-            <h2>Menu / Flow</h2>
+            <h2>Menu</h2>
             <nav>
                 <ul>
-                    <li><a href="#">Link Lorem Ipsum 1</a></li>
-                    <li><a href="#">Link Lorem Ipsum 2</a></li>
-                    <li><a href="#">Link Lorem Ipsum 3</a></li>
+                    <li><a class="active" href="/">Link Lorem Ipsum 1</a></li>
+                    <li><a href="/">Link Lorem Ipsum 2</a></li>
+                    <li><a href="/">Link Lorem Ipsum 3</a></li>
                 </ul>
             </nav>
         </section>
@@ -27,7 +27,13 @@
 
 
 <footer>
-    <p>Simple Flow Page</p>
+    <p>Simple Flow Page,
+        <span id="year">
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+        </span>
+    </p>
 </footer>
 
 </body>
