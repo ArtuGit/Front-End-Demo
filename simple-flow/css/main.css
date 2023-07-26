@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html, body {
   height: 100%;
 }
@@ -9,17 +11,22 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font: 1em Sans-Serif;
+  font: 1.2em 'Roboto', sans-serif;
   background: #505750;
+  color: #FFFFFF
 }
 
 h1 {
   margin: 1rem 1rem 0;
   font-size: 1.8rem;
+  font-style: italic;
+  font-weight: bold;
+  color: ghostwhite;
 }
 
 h2 {
   font-size: 1.2rem;
+  font-weight: bold;
   color: #F8F854;
 }
 
@@ -35,9 +42,6 @@ h1, h2 {
   padding: 20px;
 }
 
-#content .content-block {
-  margin: 0 1rem 0 1rem;
-}
 
 #sidebar {
   display: flex;
@@ -46,11 +50,13 @@ h1, h2 {
   align-self: center;
 }
 
-#sidebar-block > h2 {
+.content-block > h2 {
   text-transform: uppercase;
 }
 
-#sidebar-block {
+.content-block {
+  align-self: center;
+  margin: 0 1rem 0 1rem;
   padding: 2rem 2rem;
   margin: 20px;
   display: inline-block;
@@ -59,7 +65,7 @@ h1, h2 {
   border-radius: 6px; /* Adjust the radius to match the outer block's border */
 }
 
-#sidebar-block:before {
+.content-block:before {
   content: "";
   position: absolute;
   top: -10px;
@@ -73,7 +79,6 @@ h1, h2 {
 }
 
 main {
-  border: #98c1d9 1px solid;
   flex: 10 1 0;
 }
 
@@ -145,7 +150,6 @@ footer > p {
 
   nav > ul li {
     display: inline-block;
-    padding: 0 1rem 0 1rem;
   }
 }
 
