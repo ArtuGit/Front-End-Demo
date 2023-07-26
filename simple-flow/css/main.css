@@ -39,13 +39,18 @@ h1, h2 {
   margin: 0 1rem 0 1rem;
 }
 
-#sidebar > h2 {
+#sidebar {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 10rem;
+  align-self: center;
+}
+
+#sidebar-block > h2 {
   text-transform: uppercase;
 }
 
-#sidebar {
-  flex: 1 0 10rem;
-  align-self: center;
+#sidebar-block {
   padding: 2rem 2rem;
   margin: 20px;
   display: inline-block;
@@ -54,7 +59,7 @@ h1, h2 {
   border-radius: 6px; /* Adjust the radius to match the outer block's border */
 }
 
-#sidebar:before {
+#sidebar-block:before {
   content: "";
   position: absolute;
   top: -10px;
@@ -124,7 +129,7 @@ footer > p {
     margin: 1rem 0 1rem 0;
   }
 
-  #sidebar {
+  #sidebar-block {
     flex: 1 0 5rem;
     align-self: stretch;
   }
