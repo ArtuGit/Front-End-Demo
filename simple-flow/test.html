@@ -1,14 +1,47 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Custom Font Example</title>
+  <title>Button Animation</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    body {
+      background-color: #007bff;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 5px 40px;
+      margin: 5px;
+      background-color: #AAAAAA;
+      color: black;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .btn:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
   </style>
 </head>
-<body style="">
-<h1>This is a heading with a custom font</h1>
-<p>This is a paragraph with the same custom font applied.</p>
+<body>
+<button class="btn" onclick="submitAction()">Submit</button>
+<button class="btn" onclick="cancelAction()">Cancel</button>
+
+<script>
+  function submitAction() {
+    // Add your action for the "Submit" button here
+    console.log("Submit button clicked!");
+  }
+
+  function cancelAction() {
+    // Add your action for the "Cancel" button here
+    console.log("Cancel button clicked!");
+  }
+</script>
 </body>
 </html>

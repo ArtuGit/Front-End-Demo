@@ -125,10 +125,80 @@ footer > p {
   font-weight: normal;
 }
 
+.label {
+  font-weight: bold;
+}
+
+/* Form */
+
+form {
+  margin-top: 3rem;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="checkbox"],
+input[type="radio"],
+textarea {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-size: 1rem;
+}
+
+textarea {
+  padding: 0.4rem 0.5rem;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+/* Additional styling for checkboxes and radio buttons */
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  margin-right: 0.9rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 40px;
+  margin: 5px;
+  background-color: #AAAAAA;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+/* end Form */
+
 @media all and (max-width: 900px) {
-    #content {
-        flex-flow: column nowrap;
-    }
+  #content {
+    flex-flow: column nowrap;
+  }
 
   #content .content-block {
     margin: 1rem 0 1rem 0;
