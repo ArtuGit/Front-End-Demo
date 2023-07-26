@@ -189,8 +189,18 @@ input[type="radio"] + label {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.buttons {
+.buttons-margin {
   margin-top: 1rem;
+}
+
+.form-fields {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.form-field {
+  margin-right: 3rem;
 }
 
 /* end Form */
