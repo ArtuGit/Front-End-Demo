@@ -171,12 +171,12 @@ input[type="radio"] + label {
 
 .btn {
   display: inline-block;
-  padding: 5px 40px;
+  padding: 5px 3rem;
   margin: 5px;
   background-color: #AAAAAA;
   color: black;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   border: none;
   border-radius: 4px;
