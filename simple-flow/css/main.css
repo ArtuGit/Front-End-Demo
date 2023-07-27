@@ -50,7 +50,6 @@ h1 {
 }
 
 .content-block {
-  align-self: center;
   margin: 0 1rem 0 1rem;
   padding: 2rem 2rem;
   display: inline-block;
@@ -85,6 +84,15 @@ main h2 {
 
 main h2:first-child {
   margin: 0 0 1.2rem 0;
+}
+
+main.content-block {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main.content-block table {
+  align-self: center;
 }
 
 nav {
@@ -218,7 +226,7 @@ table {
   font-family: "Courier New", monospace;
   border-collapse: collapse;
   border: 2px solid #5B88B6;
-  width: 90%;
+  width: 95%;
   border-collapse: collapse;
   border: 2px solid #5B88B6;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
