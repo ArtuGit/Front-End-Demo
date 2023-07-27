@@ -216,6 +216,9 @@ table {
   margin: 50px auto;
   border: 2px solid #5B88B6;
   width: 90%;
+  border-collapse: collapse;
+  border: 2px solid #5B88B6;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 th, td {
