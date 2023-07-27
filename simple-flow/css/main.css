@@ -209,6 +209,72 @@ input[type="radio"] + label {
 
 /* end Form */
 
+/* Table */
+table {
+  font-family: "Courier New", monospace;
+  border-collapse: collapse;
+  margin: 50px auto;
+  border: 2px solid #5B88B6;
+  width: 90%;
+}
+
+th, td {
+  border: 1px solid #5B88B6;
+  padding: 8px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.top-row {
+  background-color: #5B88B6;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.data-row:nth-child(odd) {
+  background-color: #5B88B6;
+}
+
+.data-row:nth-child(even) {
+  background-color: #4682B4;
+}
+
+table a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1600px) {
+  table {
+    width: 100%;
+  }
+
+  td, th {
+    display: block;
+  }
+
+  td {
+    text-align: left;
+  }
+
+  .top-row, .data-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .top-row > *, .data-row > * {
+    flex: 1 1 100%;
+  }
+}
+
+/* end Table */
+
 @media all and (max-width: 900px) {
   #content {
     flex-flow: column nowrap;
