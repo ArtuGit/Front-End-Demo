@@ -33,3 +33,11 @@ Used Technologies:
 Used Technologies:
 - HTML5
 - CSS3: CSS Grid
+
+### [Simple Flow](https://artugit.github.io/Front-End-Demo/simple-flow)
+Simple HTML/CSS template for SPA with contains one level menu or flow.
+Uses style which was inspired by last Norton Utilities version for DOS.  
+Features:
+- Main Menu
+- Forms
+- Tables
