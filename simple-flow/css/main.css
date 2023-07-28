@@ -1,17 +1,21 @@
-html, body {
+html, body, #page {
   height: 100%;
 }
+
 * {
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
+body  {
   font: 1.2em 'Roboto', sans-serif;
   background: #505750;
   color: #FFFFFF
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 h1 {
