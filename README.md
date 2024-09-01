@@ -18,6 +18,11 @@ Used Technologies:
 - HTML5
 - CSS3: FlexBox
 
+###[To Do List](https://artugit.github.io/To-Do-List-on-Vue.js-and-TailwindCSS/)
+- Vue.js 3
+- TailwindCSS 2
+
+
 ### [Tailwind Demo](https://artugit.github.io/Front-End-Demo/tailwind/app/index.html)
 Used Technologies:
 - HTML5
