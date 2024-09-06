@@ -1,9 +1,13 @@
 import '../../App.css'
 import { Box } from "../BaseBox/Box.tsx";
 
-export const Boxes = () => {
+interface BoxesProps {
+    amount: number;
+}
+
+export const Boxes = ({ amount }: BoxesProps) => {
     const boxes = [];
-    for (let i = 0; i < 19; i++) {
+    for (let i = 0; i < amount; i++) {
         boxes.push(<Box key={i} />);
     }
 
