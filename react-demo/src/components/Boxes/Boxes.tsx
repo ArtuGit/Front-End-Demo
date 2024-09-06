@@ -1,5 +1,5 @@
 import '../../App.css'
-import { Box } from "../BaseBox/Box.tsx";
+import { Box } from "../Box/Box.tsx";
 
 interface BoxesProps {
     amount: number;
