@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'robomo': ['"Roboto Mono"', 'monospace'],
+      },
       backgroundImage: {
         'gradient-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
       },
