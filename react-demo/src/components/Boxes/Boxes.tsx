@@ -12,7 +12,7 @@ export const Boxes = ({ amount }: BoxesProps) => {
     }
 
     return (
-        <div className="flex flex-wrap justify-center items-center h-full">
+        <div className="flex flex-wrap justify-center items-center min-h-screen">
             {boxes}
         </div>
     );
