@@ -1,6 +1,8 @@
 import '../../App.css'
 import { Box } from "../Box/Box.tsx";
 import {useState} from "react";
+import {StatLine} from "../StatLine/StatLine.tsx";
+import {StatItem} from "../StatItem/StatItem.tsx";
 
 interface BoxesProps {
     amount: number;
@@ -30,10 +32,12 @@ export const Boxes = ({ amount }: BoxesProps) => {
             <div className="flex flex-wrap justify-center items-center">
                 {boxesComponents}
             </div>
-            <div className="my-4 flex flex-wrap justify-center">
-                <div className="font-robomo mx-8">Total: <span className="font-bold">{amount}</span></div>
-                <div className="font-robomo mx-8">Selected: <span className="font-bold">{boxes.filter(isSelected => isSelected).length}</span></div>
-            </div>
+            <StatLine>
+                <StatItem label="Total" value={amount} />
+                <StatItem label="Selected" value={boxes.filter(isSelected => isSelected).length} />
+            </StatLine>
+
+
         </div>
     );
 };
