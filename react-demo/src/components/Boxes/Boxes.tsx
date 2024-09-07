@@ -20,7 +20,9 @@ export const Boxes = ({ amount }: BoxesProps) => {
     const boxesComponents = [];
 
     for (let i = 0; i < amount; i++) {
-        boxesComponents.push(<Box key={i} index={i} isSelected={boxes[i]} setBoxesItem={setBoxesItem}/>);
+        boxesComponents.push(<
+            Box key={i} index={i} isSelected={boxes[i]} setBoxesItem={setBoxesItem}
+        />);
     }
 
     return (
