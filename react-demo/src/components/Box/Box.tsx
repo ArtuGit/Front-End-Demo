@@ -7,7 +7,7 @@ export const Box = () => {
     return (
         <div
           className={`w-52 h-52 mx-4 my-4 border-4 border-dashed border-gray-200 rounded-lg ${isSelected ? 'bg-blue-400' : ''}`}
-          onClick={() => setIsSelected(!isSelected)}
+          onClick={() => setIsSelected((selected) => !selected)}
         >
         </div>
     );
