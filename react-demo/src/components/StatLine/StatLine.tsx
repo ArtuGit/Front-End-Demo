@@ -6,8 +6,8 @@ interface StatLineProps {
 
 export const StatLine: React.FC<StatLineProps> = ({ children }: StatLineProps) => {
     return (
-        <div className="my-4 flex flex-wrap justify-center">
-            {children}
-        </div>
-    );
+            <ul className="font-robomo mx-8 my-4 flex flex-wrap justify-center">
+                {children}
+            </ul>
+);
 };

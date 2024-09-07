@@ -36,8 +36,6 @@ export const Boxes = ({ amount }: BoxesProps) => {
                 <StatItem label="Total" value={amount} />
                 <StatItem label="Selected" value={boxes.filter(isSelected => isSelected).length} />
             </StatLine>
-
-
         </div>
     );
 };
