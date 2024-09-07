@@ -8,7 +8,7 @@ interface BoxesProps {
 export const Boxes = ({ amount }: BoxesProps) => {
     const boxes = [];
     for (let i = 0; i < amount; i++) {
-        boxes.push(<Box key={i} />);
+        boxes.push(<Box key={i} index={i}/>);
     }
 
     return (
